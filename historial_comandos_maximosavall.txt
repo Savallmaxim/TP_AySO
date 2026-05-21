@@ -1,0 +1,219 @@
+pwd
+ls
+man ls
+ls -l
+cd repogit/
+ls
+cd ..
+ls
+man ls
+ls -a
+ls -a -l
+ls -al
+pwd
+cd /
+pwd
+ls
+ls -la
+cd etc/
+ls -l
+cd ..
+ls
+cd dev/
+ls
+ac
+AC
+cd ..
+ls
+cd etc/
+ls
+ls -la
+man cat
+cat passwd
+tac passwd
+pwd
+ls gss
+ls -l gss
+ls -ls /home/vagrant/
+ls -la /home/vagrant/
+cd ..
+cd 
+pwd
+/home$ cd ..
+cd ..
+exit
+ls
+ls -l
+cat README 
+cat << FIN
+linea 1
+linea 2 
+linea 3
+linea 4
+FIN
+
+cat << FIN > clase3.txt
+boca
+corriste
+cagon
+puto
+FIN
+
+ls
+cat clase3.txt 
+cat << FIN > clase3.txt
+en mardel
+gil
+FIN
+
+cat clase3.txt 
+cat << FIN >> clase3.txt 
+bostero
+puto
+FIN
+
+cat clase3.txt 
+man bc
+bc <<< 1+2
+tac clase3.txt 
+echo "hola mundo"
+echo "hola mundo" | wc
+cat clase3.txt | wc -w
+tail -n1 clase3.txt 
+tail -n4 clase3.txt 
+tail -n2 clase3.txt 
+head -n2 clase3.txt 
+cat clase3.txt | tail -n1
+cat clase3.txt | head -n1
+cat clase3.txt | head -n1 | grep 2
+cat clase3.txt | head -n1 | grep en
+cat clase3.txt | head -n3 | grep gil
+cat clase3.txt | head -n3 | grep "en mardel"
+cd /
+ls
+cd proc/
+ls
+cat cpuinfo 
+grep -i radeon cpuinfo
+grep -i core cpuinfo
+cat cpuinfo | grep -i core | head -n1
+cat cpuinfo | grep -i radeon | head -n1
+nproc
+cd
+pwd
+ls
+mkdir clases 
+ls
+mv clase3.txt clases
+ls
+cd clases/
+ls
+mv clase3.txt clase4.txt
+ls
+cat clase4.txt 
+mv clase4.txt clase3.txt
+ls
+cp clase3.txt ..
+ls
+cd ..
+ls
+pwd
+cat clase3.txt 
+rm clase3.txt 
+ls
+rm clases 
+rm -R clases
+ls
+vagrant hald
+vagrant halt
+cd
+cd ..
+exit
+ssh-keygen
+cat $HOME/.ssh/*pub
+cd
+mkdir repogit
+ls
+cd repogit
+cd
+cd \$HOME/repogit/
+cd repogit
+git clone git@github.com:Savallmaxim/TP_AySO.git 
+cd TP_AySO/
+pwd
+ls -l
+grep -i ubuntu /etc/passwd
+man grep
+grep -i ubuntu /etc/passwd | awk -F: '{print $2}' >datos_usuarios.txt
+ls
+echo "Usuario=$(whoami)" >> datos_usuarios.txt 
+ls
+echo "Maximo=$(whoami)" >> datos_usuarios.txt 
+ls
+cd datos_usuarios.txt
+ls
+echo “Usuario=$(maxi)” >> datos_usuarios.txt
+ls
+echo “Usuario=maximo” >> datos_usuarios.txt
+ls
+cat datos_usuarios.txt 
+grep -i ubuntu /etc/passwd | awk -F: '{print $2}' > datos_usuario.txt
+grep -i ubuntu /etc/passwd | awk -F: '{print $2}' > datos_usuarios.txt
+echo “Usuario=$(whoami)” >> datos_usuarios.txt
+cat datos_usuarios.txt 
+git config --global user.mail "savallmaximo@gmail.com"
+git config --global user.name "SavallMaxim"
+git add datos_usuarios.txt
+git commit -m "ADD: Agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+git config --global user.email "savallmaximo@gmail.com"
+git config --global user.name "SavallMaxim"
+git commit -m "ADD: Agregado 1er ejercicio sobre datos_usuarios.txt"
+git commit -m "ADD: Agregado 1er ejercicio sobre datos_usuario.txt"
+git commit -m "ADD: Agregado 1er ejercicio sobre datos_usuarios.txt"git add .
+git commit -m "ADD: Agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+grep "model name" /proc/procinfo | head -n1 > info_pc.txt
+grep "model name" /proc/cpuinfo | head -n1 > info_pc.txt
+git add info_pc.txt 
+git commit -m "ADD : informacion de pc"
+man grep
+grep -v "nologin" /etc/passwd | head -n10 | sort -t: -k7 > lista_ordenada 
+cat lista_ordenada 
+git add lista_ordenada 
+git commit -m "ADD: lista ordenada de usuarios"
+ls
+cat << EOF >> README.md 
+alumno: Maximo Savall
+division: 116
+turno: Mañana
+EOF
+
+git add README.md 
+git commit -m "ADD: añadi informacion del alumno en el readme"
+cd $HOME
+man mkdir
+mkdir -p TP1/{arquitectura/clase{1,2,3,4,5},so/clase{1,2,3,4,5,6}}
+cd $HOME
+ls -R TP1
+tree TP1
+install tree
+apt install tree
+snap install tree
+sudo install tree
+sudo apt install tree
+sudo snap install tree
+tree TP1
+cd \$HOME/repogit/TP_AySO
+ls
+cd $HOME/repogit/TP_AySO
+echo 'mkdir -p $HOME/TP1/{arquitectura/Clase{1,2,3,4,5},so/Clase{1,2,3,4,5,6}}' > script_dir.sh
+man chmod
+chmod +x script_dir.sh 
+git add script_dir.sh 
+git commit -m "ADD: agregando script"
+ls -l script_dir.sh 
+git status
+git add datos_usuario.txt 
+git commit -m "Arreglo de datos_usuario"
+history -a
